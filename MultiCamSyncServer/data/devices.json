@@ -1,0 +1,22 @@
+[
+  {
+    "deviceId": "android_37022",
+    "name": "Camera_android_37022",
+    "port": 6001,
+    "subdir": "Camera_android_37022",
+    "address": [
+      "172.19.0.1",
+      62035
+    ]
+  },
+  {
+    "deviceId": "android_19327",
+    "name": "Camera_android_19327",
+    "port": 6002,
+    "subdir": "Camera_android_19327",
+    "address": [
+      "172.19.0.1",
+      58845
+    ]
+  }
+]
