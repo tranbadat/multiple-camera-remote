@@ -22,7 +22,7 @@ AUTH_TOKEN = os.getenv('AUTH_TOKEN', '123456')
 DATA_DIR = os.getenv('DATA_DIR', 'data')
 
 # Số frame tối đa (0 = không giới hạn)
-MAX_FRAMES = int(os.getenv('MAX_FRAMES', '0'))
+MAX_FRAMES = int(os.getenv('MAX_FRAMES', '50'))
 
 # --- Dynamic devices (nhiều mobile/cam) ---
 BASE_CAM_PORT = int(os.getenv('BASE_CAM_PORT', '6001'))   # cổng TCP bắt đầu cho device mới
@@ -95,7 +95,7 @@ def handle_tcp_client(conn, addr, cam_dir):
                 continue
 
             try:
-                image_data = base64.b64decode(data.decode('utf-8'))
+                image_data = data
 
                 timestamp = datetime.datetime.now().strftime("%Y%m%d_%H%M%S_%f")
                 filepath = os.path.join(cam_dir, f"frame_{timestamp}.jpg")
