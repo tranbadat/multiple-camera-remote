@@ -1,0 +1,12 @@
+[
+  {
+    "deviceId": "android_99672",
+    "name": "Camera_android_99672",
+    "port": 6001,
+    "subdir": "Camera_android_99672",
+    "address": [
+      "192.168.2.58",
+      46466
+    ]
+  }
+]

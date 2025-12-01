@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">MultiCamSynceClient</string>
+    <string name="server_ip">10.0.2.2</string>
+    <string name="default_token">123456</string>
+    <string name="camera_id">Camera Id</string>
+    <string name="stop">STOP</string>
+    <string name="start">START</string>
+    <string name="connect">CONNECT</string>
+    <string name="token">Token</string>
+    <string name="server_ip_name">Server IP</string>
+    <string name="device_list_will_appear_here">Danh sách thiết bị</string>
+</resources>

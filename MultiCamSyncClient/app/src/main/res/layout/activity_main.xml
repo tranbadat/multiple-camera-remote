@@ -1,0 +1,92 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="12dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.camera.view.PreviewView
+        android:id="@+id/previewView"
+        android:layout_width="match_parent"
+        android:layout_height="300dp" />
+
+    <EditText
+        android:id="@+id/ipInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/server_ip_name"
+        android:background="#444"
+        android:textColor="#fff"
+        android:padding="10dp"
+        android:layout_margin="5dp"/>
+
+    <EditText
+        android:id="@+id/tokenInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/token"
+        android:background="#444"
+        android:textColor="#fff"
+        android:padding="10dp"
+        android:layout_margin="5dp"/>
+    <EditText
+        android:id="@+id/camId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:autofillHints="@string/camera_id"
+        android:background="#444"
+        android:textColor="#fff"
+        android:padding="10dp"
+        android:layout_margin="5dp"/>
+
+    <Button
+        android:id="@+id/btnConnect"
+        android:text="@string/connect"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_background"
+        android:textColor="#fff"
+        android:layout_marginTop="10dp"/>
+
+    <Button
+        android:id="@+id/btnStart"
+        android:text="@string/start"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_background"
+        android:textColor="#fff"
+        android:layout_marginTop="10dp"/>
+
+    <Button
+        android:id="@+id/btnStop"
+        android:text="@string/stop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_background"
+        android:textColor="#fff"
+        android:layout_marginTop="10dp"/>
+    <!-- Ví dụ trong LinearLayout dọc, dưới logView -->
+    <TextView
+        android:id="@+id/devicesListView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/device_list_will_appear_here"
+        android:textSize="12sp"
+        android:padding="8dp"
+        android:background="#222222"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="10dp"
+        android:scrollbars="vertical" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
+
+        <TextView
+            android:id="@+id/logView"
+            android:textColor="#444"
+            android:textSize="12sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </ScrollView>
+
+</LinearLayout>
